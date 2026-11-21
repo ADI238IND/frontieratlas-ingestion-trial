@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "frontieratlas-trial"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["aiohttp>=3.9,<4", "lxml>=5,<7", "openpyxl>=3.1,<4"]
+
+[project.scripts]
+frontieratlas = "frontieratlas.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

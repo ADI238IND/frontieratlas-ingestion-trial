@@ -1,0 +1,97 @@
+{
+  "startups": "https://yc-oss.github.io/api/companies/all.json",
+  "products": "https://agipicks.com/data/tools.json",
+  "papers": "https://paperswithcode.co/api/v1/",
+  "news": [
+    {
+      "name": "OpenAI News",
+      "url": "https://openai.com/news/rss.xml",
+      "hosts": [
+        "openai.com",
+        "www.openai.com"
+      ]
+    },
+    {
+      "name": "Google DeepMind",
+      "url": "https://deepmind.google/blog/rss.xml",
+      "hosts": [
+        "deepmind.google"
+      ]
+    },
+    {
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "hosts": [
+        "huggingface.co"
+      ]
+    },
+    {
+      "name": "MIT Technology Review AI",
+      "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed/",
+      "hosts": [
+        "technologyreview.com",
+        "www.technologyreview.com"
+      ]
+    },
+    {
+      "name": "Google AI",
+      "url": "https://blog.google/technology/ai/rss/",
+      "hosts": [
+        "blog.google"
+      ]
+    }
+  ],
+  "jobs": [
+    {
+      "name": "OpenAI",
+      "adapter": "ashby",
+      "url": "https://api.ashbyhq.com/posting-api/job-board/openai",
+      "hosts": [
+        "jobs.ashbyhq.com",
+        "openai.com",
+        "www.openai.com"
+      ]
+    },
+    {
+      "name": "Perplexity",
+      "adapter": "ashby",
+      "url": "https://api.ashbyhq.com/posting-api/job-board/perplexity",
+      "hosts": [
+        "jobs.ashbyhq.com",
+        "perplexity.ai",
+        "www.perplexity.ai"
+      ]
+    },
+    {
+      "name": "Cohere",
+      "adapter": "ashby",
+      "url": "https://api.ashbyhq.com/posting-api/job-board/cohere",
+      "hosts": [
+        "jobs.ashbyhq.com",
+        "cohere.com",
+        "www.cohere.com"
+      ]
+    },
+    {
+      "name": "ElevenLabs",
+      "adapter": "ashby",
+      "url": "https://api.ashbyhq.com/posting-api/job-board/elevenlabs",
+      "hosts": [
+        "jobs.ashbyhq.com",
+        "elevenlabs.io",
+        "www.elevenlabs.io"
+      ]
+    },
+    {
+      "name": "Anthropic",
+      "adapter": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/anthropic/jobs?content=true",
+      "hosts": [
+        "job-boards.greenhouse.io",
+        "boards.greenhouse.io",
+        "anthropic.com",
+        "www.anthropic.com"
+      ]
+    }
+  ]
+}
