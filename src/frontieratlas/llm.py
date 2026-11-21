@@ -147,7 +147,7 @@ class Orchestrator:
 
     @classmethod
     def configured(cls, client):
-        gemini = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+        gemini = os.getenv("GEMINI_MODEL", "gemini-3.5-flash-lite")
         models = [
             ("gemini", "GEMINI_API_KEY", gemini,
              f"https://generativelanguage.googleapis.com/v1beta/models/{quote(gemini, safe='')}:generateContent"),

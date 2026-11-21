@@ -2,6 +2,8 @@
 
 This pipeline builds a source-backed AI intelligence dataset across startups, products, research papers, jobs and news. It accepts time-sensitive signals only when publication evidence supports the rolling 24-hour window. The three-page [architecture](architecture.pdf) covers scaling, deduplication, rate limits and storage.
 
+[Open the six-tab trial dataset](https://docs.google.com/spreadsheets/d/1G42w9-BTF1JcAEs-V8Dd4CGfANE_dEknFmOeTyETPzk/edit)
+
 ## Recorded trial run
 
 The export window ended at **09:08 IST on 21 November 2026** (03:38 UTC). The three bulk tabs met their minimum counts.
@@ -60,6 +62,8 @@ Outputs are the six-tab `output/FrontierAtlas_Data.xlsx`, canonical JSON Lines f
 | `core.py` | Name resolution, timezone normalization, audit log and idempotent persistence |
 | `export.py` | Six-tab workbook and canonical row export with freshness checked again at export |
 | `config/` | Sources and 50 curated startup/company names, plus product aliases |
+
+The default Gemini model is `gemini-3.5-flash-lite`. Groq lists Llama 3.3 70B as an enterprise model. Set `GROQ_MODEL=openai/gpt-oss-20b` if your Groq project has access to GPT OSS rather than Llama.
 
 The LLM path proposes an evidence-grounded company mention for news, or a job function where the title and department rules did not match. Exact source facts such as timestamps and star counts are collected outside the model. The provider test injects 413, 429 and invalid JSON, then checks that a grounded answer from the final provider is accepted. Live model calls require credentials and were not part of the recorded run.
 
